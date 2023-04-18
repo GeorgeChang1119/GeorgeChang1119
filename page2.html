@@ -47,7 +47,12 @@
         <br>
         
         <h style="position:relative;left:40px;color:red;font-size:30px"><b>歸一化</b></h><br>
-        <p style="position:relative;left:40px">在進行資料建模或分析前，將資料進行歸一化是較好的選擇，不但能較快速的收斂，也能讓彼此的資料範圍更為集中，方便觀察。</p>
+        <p style="position:relative;left:40px">
+        在進行資料迴歸分析前，將資料進行歸一化能使各特徵的尺度變為一致，縮小不同特徵間因數值大小產生之比重失衡，因此比較能算出更為準確的自變數係數，提升迴歸模<br>
+        型的準確性，不過將資料歸一化在一些情況下亦可能造成資料分佈的改變，使最終的分析有不好的預期效果，因此還是得視情況與目的來決定使用與否。<br><br>
+        一般而言，若欲將資料歸一化，我們會對所有特徵一致性的使用同種方法進行處理，例如對所有特徵皆使用Z-score法，以盡量避免不同特徵中轉換後的尺度有所不同，不過<br>
+        若是資料的某特徵分佈狀態不太適用此種歸一化方法，亦可視情況對不同特徵各別套入不同的歸一化方法，在這邊為了方便處理，我們皆對所有特徵使用一樣的處理方法。
+        </p>
         <img src="normallize.jpg" style="position:relative;left:40px" width="800",height=600><br>
         <p style="position:relative;left:40px">用Z-SCORE法歸一化完之資料</p><br>
         <img src="normalizedata.jpg" style="position:relative;left:40px" width="800",height=600><br>
